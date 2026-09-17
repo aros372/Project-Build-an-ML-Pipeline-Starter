@@ -15,6 +15,7 @@ In this project you will build such a pipeline.
   * [The configuration](#the-configuration)
   * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
   * [Pre-existing components](#pre-existing-components)
+  * [Reviewer Links](#reviewer_links)
 
 ## Preliminary steps
 
@@ -179,3 +180,7 @@ Please, make sure all steps are using **the same** python version and that you h
 ## License
 
 [License](LICENSE.txt)
+
+## Reviewer Links
+W&B Project: https://wandb.ai/aros372-western-governors-university/nyc_airbnb?nw=nwuseraros372
+Github Repo: https://github.com/aros372/Project-Build-an-ML-Pipeline-Starter.git
