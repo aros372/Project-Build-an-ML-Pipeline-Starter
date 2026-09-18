@@ -108,7 +108,7 @@ def go(config: DictConfig):
                     "stratify_by": config["modeling"]['stratify_by'],
                     "rf_config": rf_config,
                     "max_tfidf_features": config["modeling"]['max_tfidf_features'],
-                    "output_artifact": 'random_forest_export.csv'
+                    "output_artifact": 'model_export.csv'
                 }
             )
 
@@ -122,7 +122,7 @@ def go(config: DictConfig):
             _ = mlflow.run('components/test_regression_model', 'main',
                 parameters = {
                     # --mlflow_model {mlflow_model} --test_dataset {test_dataset}"
-                    'mlflow_model': 'random_forest_export.csv:prod',
+                    'mlflow_model': 'model_export.csv:prod',
                     'test_dataset': 'test_data.csv:latest'
                 }
             )
